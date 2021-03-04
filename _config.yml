@@ -27,6 +27,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.coderetreat.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: coderetreat
 
+algolia:
+  application_id: 'QH9SU73U07'
+  index_name: 'CODERETREAT'
+
 # SEO Tags
 twitter:
   username: coderetreat
