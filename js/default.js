@@ -6,6 +6,7 @@ import "./search/search.css";
 import algoliasearch from "algoliasearch/lite";
 import instantsearch from "instantsearch.js";
 import { searchBox, hits } from "instantsearch.js/es/widgets";
+import 'instantsearch.css/themes/reset.css';
 
 window.$ = jquery;
 
@@ -14,8 +15,8 @@ $(function () {
 });
 
 const searchClient = algoliasearch(
-  "QH9SU73U07",
-  "11c9a06e6e1dc51a59a858c3e493feff"
+  "8Q16J1ZDG3",
+  "fc3522aed0fd32587e77332814c3ecb2"
 );
 
 const search = instantsearch({
@@ -35,10 +36,9 @@ search.addWidgets([
 
     templates: {
       item: `
-        <h2>
-          {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
-        </h2>
-        <p>{{ description }}</p>
+      <a href="{{ url }}">
+        <p><strong>{{#helpers.highlight}}{ "attribute": "title" }{{/helpers.highlight}}</strong></p>
+        <p>{{ description }}</p></a>
       `,
     },
   }),

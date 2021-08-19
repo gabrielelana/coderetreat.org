@@ -28,7 +28,7 @@ url: "https://www.coderetreat.org" # the base hostname & protocol for your site,
 twitter_username: coderetreat
 
 algolia:
-  application_id: 'QH9SU73U07'
+  application_id: '8Q16J1ZDG3'
   index_name: 'CODERETREAT'
 
 # SEO Tags
